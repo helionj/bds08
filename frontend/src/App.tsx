@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Filter from './components/Filter';
 import Header from './components/Header';
+import Sales from './components/Sales';
 import { FilterData } from './types';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <div className="app-container">
         <Filter onSubmitFilter={onFilterChange} />
+        <Sales />
       </div>
     </div>
   );
