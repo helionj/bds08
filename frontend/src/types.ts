@@ -4,5 +4,16 @@ export type Store = {
 };
 
 export type FilterData = {
-  store: Store;
+  store?: Store;
+};
+
+export type Gender = 'FEMALE' | 'MALE' | 'OTHER';
+
+export type SaleByGender = {
+  sum: number;
+  gender: Gender;
+};
+export type PieChartConfig = {
+  labels: string[];
+  series: number[];
 };

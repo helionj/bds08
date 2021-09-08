@@ -15,7 +15,7 @@ const App = () => {
       <Header />
       <div className="app-container">
         <Filter onSubmitFilter={onFilterChange} />
-        <Sales />
+        <Sales filterData={filterData} />
       </div>
     </div>
   );

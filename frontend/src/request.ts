@@ -9,6 +9,6 @@ export const makeRequest = axios.create({
 
 export const buildFilterParameters = (filterData?: FilterData) => {
   return {
-    storeId: filterData?.store.id,
+    storeId: filterData?.store?.id,
   };
 };
